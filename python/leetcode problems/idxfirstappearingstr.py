@@ -1,3 +1,8 @@
 "index of the first appearance of a string"
-# def strStr(haystack:str, needle:str) -> int:
-#     for i in range(0, len(haystack)):
+def strstr(heystack:str, needle:str):
+    if needle in heystack:
+        return heystack.index(needle)
+    else:
+        return -1
+
+print(strstr("bdbdbsad", "sad"))
